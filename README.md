@@ -7,10 +7,10 @@ och sätta en text på knappen "RESET"
 
 2. Rest skapa en event för click 
 
-3. Här har vi skapa en click knapp på webbsidan den första kanppen,
-och sätt en click funktion och den funktion har vi tre funktioner som fungera på samma knapp tryckt.
+3. Här har vi skapat en klick knapp på webbsidan på den första knappen,
+och sätta man en klick funktion och i den funktionen har vi tre funktioner som fungera på en och samma knapptryck.
 
-4. När du clicka på den andra bilden så kommer det bakgrundfärg på den att ändra till grå.
+4. När du klicka på den andra bilden så kommer det en bakgrundfärg på den kommer det att ändra till grå.
 Jag har hämtat figure elemnet och figure[1] = den mitten bilden 
 och där gjorde jag event så den kan ändra färg.
 
@@ -34,23 +34,23 @@ och där ändra vi tillbaka färgen som var innan.
 
 12. hämta ul och gör det display none = den gör den syns inte på webben. 
 
-13. clicka på texten contact då ändra alla texter Sinus Hoodie
+13. klicka på texten contact då ändra alla texter på Sinus Hoodie
 jag har hämtat upp id header-navigation och där hämta jag upp den children som är Contact och där gjorde jag en event, så när man clicka på contact då ändra alla texter h2 elemnets.
 
-14. clicka knappen på mitten då försvinner nav elementer 
+14. klicka den knappen i mitten då försvinner nav elementen
 hämta upp alla button sen väljer ut knappen mitten som är btns[1]
 och gjort en event så nav element försvinner på webben.
 
 15. ändrar art-1 bakgrungfärg till hot pink
 gjorde en funktion som kan länka till den knapp1
-så när mar clicka på button 1 då ändra den bakgrundfärg 
+så när mar klicka på button 1 då ändra den bakgrundfärg 
 
 16. ändra första bilden på en den första knappen
 har gjort en funktion som länka till knapp1
 hämta figure och sen hämta upp children[0]
 första bilden då. 
 
-17. clicka första knapp till vänster då ändra färgerna på de andra två sista knapparna.
+17. klicka första knapp till vänster då ändra färgerna på de andra två sista knapparna.
 har gjort en funktion som länka till knapp1
 hämtat upp alla button och sen ändra färg på dom två sista knappar.
 
@@ -63,6 +63,6 @@ hämtat upp alla button och sen ändra färg på dom två sista knappar.
 24. loopa genom så alla li får border röd
 
 25. gör att ul elemnent ej synligt i webben 
-26. med en click på logo lägst upp sidan gör att ul elementet synligt.
-hämta upp alla img och väljer sen den första som logo på sidan 
+26. med en klick på logo längst upp på vänstra sidan gör att ul elementet så den bli synligt.
+hämta upp alla img och väljer sen den första logo på sidan 
 gjort en event click så att ul är synligt.
