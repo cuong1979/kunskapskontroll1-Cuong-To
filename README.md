@@ -54,5 +54,14 @@ första bilden då.
 har gjort en funktion som länka till knapp1
 hämtat upp alla button och sen ändra färg på dom två sista knappar.
 
-18.
+18. hämta body tagg så jag lägga in den ny ul som jag skapa
+19. skapa en ny ul element 
+20. lägga in i body
+21. hämta ul
+22. loopa genom dom så alla får en class
+23. hämta alla li
+24. loopa genom så alla li får border röd
 
+25. gör att ul elemnent ej synligt i webben 
+26. med en click på logo lägst upp sidan gör att ul elementet synligt.
+hämta upp alla img och väljer sen 
