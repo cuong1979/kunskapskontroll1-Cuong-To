@@ -14,7 +14,7 @@ och sätt en click funktion och den funktion har vi tre funktioner som fungera p
 Jag har hämtat figure elemnet och figure[1] = den mitten bilden 
 och där gjorde jag event så den kan ändra färg.
 
-    från 5 till   är återställningen som återställa alla tillbaka som det var i början 
+    från 5 till 12  är återställningen RESET knapp
 
 5. Har gjort en reset funktion som man kan ligger alla förändringar som gör tillbaka som den ursprungligt var.
 
@@ -30,4 +30,29 @@ och där ändra vi tillbaka färgen som var innan.
 
 10. hämta alla h2 och ändra tillbaka texten som är Sinus Hoodie.
 
-11. 
+11. hämta nav elemnet och gör det display block = gör den synligt igen
+
+12. hämta ul och gör det display none = den gör den syns inte på webben. 
+
+13. clicka på texten contact då ändra alla texter Sinus Hoodie
+jag har hämtat upp id header-navigation och där hämta jag upp den children som är Contact och där gjorde jag en event, så när man clicka på contact då ändra alla texter h2 elemnets.
+
+14. clicka knappen på mitten då försvinner nav elementer 
+hämta upp alla button sen väljer ut knappen mitten som är btns[1]
+och gjort en event så nav element försvinner på webben.
+
+15. ändrar art-1 bakgrungfärg till hot pink
+gjorde en funktion som kan länka till den knapp1
+så när mar clicka på button 1 då ändra den bakgrundfärg 
+
+16. ändra första bilden på en den första knappen
+har gjort en funktion som länka till knapp1
+hämta figure och sen hämta upp children[0]
+första bilden då. 
+
+17. clicka första knapp ändra färg på två sista knappar
+har gjort en funktion som länka till knapp1
+hämtat upp alla button och sen ändra färg på dom två sista knappar.
+
+18.
+
