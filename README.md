@@ -50,7 +50,7 @@ har gjort en funktion som länka till knapp1
 hämta figure och sen hämta upp children[0]
 första bilden då. 
 
-17. clicka första knapp ändra färg på två sista knappar
+17. clicka första knapp till vänster då ändra färgerna på de andra två sista knapparna.
 har gjort en funktion som länka till knapp1
 hämtat upp alla button och sen ändra färg på dom två sista knappar.
 
