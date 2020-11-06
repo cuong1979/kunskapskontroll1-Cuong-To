@@ -14,17 +14,17 @@ reset.addEventListener('click', resetAll);
 let knapp1 = btns[0];
 knapp1.addEventListener('click', function(event){
     changeArt1toHotPink();
-    changeH2inArt2();
     changeImg();
-    changeH2();
+    //changeH2();
     changeButtonColor();
    
 });
+
 //ändra andra bilden på bakgrundfärg med den förta knappen
 let figure = document.querySelectorAll('figure');
 let colorChange = figure[1];
-figure[1].addEventListener('click', function(e){
-    figure[1].style.backgroundColor = 'grey'
+colorChange.addEventListener('click', function(e){
+    colorChange.style.backgroundColor = 'grey'
 })
 
 function resetAll(){
@@ -32,27 +32,25 @@ function resetAll(){
     let art1 = document.querySelector('.art-1');
     art1.style.backgroundColor = 'white';
 
-    let h2 = document.querySelector('.art-2 h2');
-    h2.innerText = 'Sinus Hoodie';
-
     // reset tillbaka den ursprunglig bilden 
     let article = document.querySelector('figure')
     let articleChild = article.children;
     articleChild[0].setAttribute('src', 'img/hoodie-ash.png');
 
     // reset tillbaka den ursprunglig färgen
-    
     let figure = document.querySelectorAll('figure');
     let colorChange = figure[1];
-    figure[1].style.backgroundColor = 'rgb(244, 182, 10)';
+    colorChange.style.backgroundColor = 'rgb(244, 182, 10)';
     
-    //reset tillbaka den ursprunglig text
-    let newH2 = document.querySelector('h2');
-    newH2.innerText = 'Sinus Hoodie'
-    
-    //reset tillbaka den ursprunglig färg
-    let button = document.querySelector('button');
-    button.style.color = 'white';
+    //reset tillbaka dom två knappar ursprunglig färg
+    let button = document.querySelectorAll('button');
+    button[1].style.color = 'white';
+    button[2].style.color = 'white';
+    // reset tillbaka dom texter ursprunglig text.
+    let h2 = document.querySelectorAll('h2');
+    h2[0].innerText = 'Sinus Hoodie';
+    h2[1].innerText = 'Sinus Hoodie';
+    h2[2].innerText = 'Sinus Hoodie';
 
     // reset knappen gör att man kan tar nav element och tar tillbaka nav element på samma knapp.
     let removeElement = document.querySelector('nav')
@@ -65,15 +63,24 @@ function resetAll(){
     
 }
  
+        // clicka på texten contact då ändra texter Sinus Hoodie 
+        let navElement = document.querySelector('#header-navigation');
+        let navChildren = navElement.children;
+        navChildren[2].addEventListener('click', function(e){
+                let h2 = document.querySelectorAll('h2');
+                h2[0].innerText = 'GREY';
+                h2[1].innerText = 'RED';
+                h2[2].innerText = 'BLUE';
+        })
 
+        
 
-function changeH2inArt2(){
-    let h2 = document.querySelector('.art-2 h2');
-    h2.innerText = 'Radikalt';
-}
+        
+    
+
 
 //ändrar art-1 bakgrungfärg till hot pink
-function changeArt1toHotPink(){
+    function changeArt1toHotPink(){
     let art1 = document.querySelector('.art-1');
     art1.style.backgroundColor = 'hotpink';
 }
@@ -87,15 +94,12 @@ articleChild[0].setAttribute('src', 'img/hoodie-forrest.png');
 
 
 
-// ändra första bilden på text med den första  knappen
-function changeH2(){
-    let newH2 = document.querySelector('h2');
-    newH2.innerText = 'HELLO DOM'
-}
-// ändra första knappen text ändra färg med den första knappen
+// clicka första knapp  ändra färg på två sista  knappar
 function changeButtonColor(){
-    let button = document.querySelector('button');
-    button.style.color = 'red'
+    let button = document.querySelectorAll('button');
+    button[1].style.color = 'red'
+    button[2].style.color = 'red'
+    
 }
 
 
