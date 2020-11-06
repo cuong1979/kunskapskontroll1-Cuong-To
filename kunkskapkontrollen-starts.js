@@ -1,16 +1,14 @@
-//Test
-
-//återställsknappen
+//   1  //återställsknappen
 let btns = document.querySelectorAll('button');
 let reset = btns[2];
 reset.innerText = 'RESET';
 
 
-//Sätt en event listner på reset-knappen
+// 2 //Sätt en event listner på reset-knappen
 reset.addEventListener('click', resetAll);
    
 
-//sätt event listener för första knappen
+// 3 // sätt event listener för första knappen
 let knapp1 = btns[0];
 knapp1.addEventListener('click', function(event){
     changeArt1toHotPink();
@@ -19,11 +17,11 @@ knapp1.addEventListener('click', function(event){
    
 });
 
-//ändra andra bilden på bakgrundfärg med den förta knappen
+//  4 //ändra andra bilden på bakgrundfärg
 let figure = document.querySelectorAll('figure');
-let colorChange = figure[1];
-colorChange.addEventListener('click', function(e){
-    colorChange.style.backgroundColor = 'grey'
+
+figure[1].addEventListener('click', function(e){
+    figure[1].style.backgroundColor = 'grey'
 })
 
 function resetAll(){
