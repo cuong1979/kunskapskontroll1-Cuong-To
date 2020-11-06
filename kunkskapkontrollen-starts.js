@@ -16,12 +16,16 @@ knapp1.addEventListener('click', function(event){
     changeArt1toHotPink();
     changeH2inArt2();
     changeImg();
-    changeBackground();
     changeH2();
     changeButtonColor();
-    remove('art-2');
-    
+   
 });
+//ändra andra bilden på bakgrundfärg med den förta knappen
+let figure = document.querySelectorAll('figure');
+let colorChange = figure[1];
+figure[1].addEventListener('click', function(e){
+    figure[1].style.backgroundColor = 'grey'
+})
 
 function resetAll(){
     // reset art1 till white background
@@ -37,8 +41,10 @@ function resetAll(){
     articleChild[0].setAttribute('src', 'img/hoodie-ash.png');
 
     // reset tillbaka den ursprunglig färgen
-    let figure = document.querySelector('figure');
-    figure.style.backgroundColor = 'rgb(244, 182, 10)';
+    
+    let figure = document.querySelectorAll('figure');
+    let colorChange = figure[1];
+    figure[1].style.backgroundColor = 'rgb(244, 182, 10)';
     
     //reset tillbaka den ursprunglig text
     let newH2 = document.querySelector('h2');
@@ -79,11 +85,7 @@ let articleChild = article.children;
 articleChild[0].setAttribute('src', 'img/hoodie-forrest.png');
 }
 
-//ändra första bilden på bakgrundfärg med den förta knappen
-function changeBackground(){
-    let figure = document.querySelector('figure');
-    figure.style.backgroundColor = 'grey'
-}
+
 
 // ändra första bilden på text med den första  knappen
 function changeH2(){
