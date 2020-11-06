@@ -116,6 +116,7 @@ body.appendChild(newUl);
 // hämta ul
 
 let ul = document.querySelector('ul');
+
 // loopa genom dom så alla får en class 
 for(let i=0; i<5; i++){
     let newLi = document.createElement('li');
@@ -127,6 +128,7 @@ let li = document.querySelectorAll('li');
 
 for(let y=0; y<li.length; y++){
     li[y].style.border = 'solid 2px red'
+   
 }
 
 
