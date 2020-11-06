@@ -56,7 +56,11 @@ function resetAll(){
     // reset knappen gör att man kan tar nav tar tillbaka nav element.
     let removeElement = document.querySelector('nav');
             removeElement.style.display = 'block';
-}
+
+    // reset knapp gör att li listan borta  
+        let ulDel = document.querySelectorAll('ul')     
+        ul.style.display = 'none'
+}       
  
 // clicka på texten contact då ändra alla texter Sinus Hoodie 
     let navElement = document.querySelector('#header-navigation');
@@ -109,27 +113,41 @@ function changeButtonColor(){
 
 // hämta body tagg så jag lägga in den ny ul som jag skapa
 let body = document.querySelector('body')
+
 // skapa en ny ul element 
 let newUl = document.createElement('ul');
+
 // lägga in i body 
 body.appendChild(newUl);
-// hämta ul
 
+// hämta ul
 let ul = document.querySelector('ul');
 
 // loopa genom dom så alla får en class 
 for(let i=0; i<5; i++){
     let newLi = document.createElement('li');
     newLi.setAttribute('class', 'list-item');
+    // sätta in li listan till ul 
     ul.appendChild(newLi);
-}
-
+    console.log(newLi) 
+} 
+    
 let li = document.querySelectorAll('li');
-
+// loopa genom så alla li får border röd
 for(let y=0; y<li.length; y++){
     li[y].style.border = 'solid 2px red'
    
 }
+
+console.log(ul)
+ul.style.display = 'none'
+
+
+let img = document.querySelectorAll('img');
+img[0].addEventListener('click', function(){
+    ul.style.display = 'block'
+})
+
 
 
 
