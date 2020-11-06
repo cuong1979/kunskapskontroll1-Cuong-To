@@ -15,7 +15,6 @@ let knapp1 = btns[0];
 knapp1.addEventListener('click', function(event){
     changeArt1toHotPink();
     changeImg();
-    //changeH2();
     changeButtonColor();
    
 });
@@ -139,10 +138,10 @@ for(let y=0; y<li.length; y++){
    
 }
 
-console.log(ul)
+// gör att ul elemnent ej synligt i webben 
 ul.style.display = 'none'
 
-
+// med en click på logo lägst upp sidan gör att ul elementet synligt.
 let img = document.querySelectorAll('img');
 img[0].addEventListener('click', function(){
     ul.style.display = 'block'
