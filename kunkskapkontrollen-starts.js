@@ -24,35 +24,36 @@ figure[1].addEventListener('click', function(e){
     figure[1].style.backgroundColor = 'grey'
 })
 
+// 5 // 
 function resetAll(){
-    // reset art1 till white background
+    // 6 //reset art1 till vit  bakgrund
     let art1 = document.querySelector('.art-1');
     art1.style.backgroundColor = 'white';
 
-    // reset tillbaka den ursprunglig bilden 
+    // 7 // reset tillbaka den ursprunglig bilden 
     let article = document.querySelector('figure')
     let articleChild = article.children;
     articleChild[0].setAttribute('src', 'img/hoodie-ash.png');
 
-    // reset tillbaka den ursprunglig färgen
+    // 8 //reset tillbaka den ursprunglig färgen
     let figure = document.querySelectorAll('figure');
     let colorChange = figure[1];
     colorChange.style.backgroundColor = 'rgb(244, 182, 10)';
     
-    //reset tillbaka dom två knappar ursprunglig färg
+    // 9 //reset tillbaka dom två knappar ursprunglig färg
     let button = document.querySelectorAll('button');
     button[1].style.color = 'white';
     button[2].style.color = 'white';
     
-    // reset tillbaka dom texter ursprunglig text.
+    // 10 // reset tillbaka dom texter ursprunglig text.
     let h2 = document.querySelectorAll('h2');
     h2[0].innerText = 'Sinus Hoodie';
     h2[1].innerText = 'Sinus Hoodie';
     h2[2].innerText = 'Sinus Hoodie';
 
-    // reset knappen gör att man kan tar nav tar tillbaka nav element.
-    let removeElement = document.querySelector('nav');
-            removeElement.style.display = 'block';
+    // 11 //reset knappen gör att man kan tar nav tar tillbaka nav element.
+    let blockElement = document.querySelector('nav');
+            blockElement.style.display = 'block';
 
     // reset knapp gör att li listan borta  
         let ulDel = document.querySelectorAll('ul')     
