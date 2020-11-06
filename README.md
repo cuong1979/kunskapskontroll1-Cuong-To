@@ -64,4 +64,5 @@ hämtat upp alla button och sen ändra färg på dom två sista knappar.
 
 25. gör att ul elemnent ej synligt i webben 
 26. med en click på logo lägst upp sidan gör att ul elementet synligt.
-hämta upp alla img och väljer sen 
+hämta upp alla img och väljer sen den första som logo på sidan 
+gjort en event click så att ul är synligt.
