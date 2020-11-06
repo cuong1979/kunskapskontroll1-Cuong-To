@@ -1,3 +1,5 @@
+//Test
+
 //återställsknappen
 let btns = document.querySelectorAll('button');
 let reset = btns[2];
@@ -46,6 +48,14 @@ function resetAll(){
     let button = document.querySelector('button');
     button.style.color = 'white';
 
+    // reset knappen gör att man kan tar nav element och tar tillbaka nav element på samma knapp.
+    let removeElement = document.querySelector('nav')
+        if(removeElement.style.display == 'block'){
+        removeElement.style.display = 'none';
+      }
+        else{
+            removeElement.style.display = 'block';
+        }
     
 }
  
