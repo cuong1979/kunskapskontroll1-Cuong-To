@@ -55,12 +55,12 @@ function resetAll(){
     let blockElement = document.querySelector('nav');
             blockElement.style.display = 'block';
 
-    // reset knapp gör att li listan borta  
+    // 12 // reset knapp gör att li listan borta  
         let ulDel = document.querySelectorAll('ul')     
-        ul.style.display = 'none'
+        ulDel.style.display = 'none'
 }       
  
-// clicka på texten contact då ändra alla texter Sinus Hoodie 
+    // 13 //clicka på texten contact då ändra alla texter Sinus Hoodie 
     let navElement = document.querySelector('#header-navigation');
     let navChildren = navElement.children;
     navChildren[2].addEventListener('click', function(e){
@@ -70,58 +70,49 @@ function resetAll(){
         h2[2].innerText = 'BLUE';
 })
 
-    // clicka knappen på mitten gör att nav elementer försvinner
-    
+    // 14 //clicka knappen på mitten gör att nav elementer försvinner
     let btn2 = document.querySelectorAll('button');
-        btn2[1].addEventListener('click', function(){
-            let removeElement = document.querySelector('nav');
-            removeElement.style.display = 'none';
-        });
+    btn2[1].addEventListener('click', function(){
+        let removeElement = document.querySelector('nav');
+        removeElement.style.display = 'none';
+    });
         
 
-        
-    
-
-
-//ändrar art-1 bakgrungfärg till hot pink
+    // 15 //ändrar art-1 bakgrungfärg till hot pink
     function changeArt1toHotPink(){
     let art1 = document.querySelector('.art-1');
     art1.style.backgroundColor = 'hotpink';
 }
 
-// ändra första bilden på en den förta knappen
+// 16 //ändra första bilden på en den första knappen
 function changeImg(){
 let article = document.querySelector('figure')
 let articleChild = article.children;
 articleChild[0].setAttribute('src', 'img/hoodie-forrest.png');
 }
 
-
-
-// clicka första knapp  ändra färg på två sista  knappar
+// 17 //clicka första knapp  ändra färg på två sista  knappar
 function changeButtonColor(){
     let button = document.querySelectorAll('button');
     button[1].style.color = 'red'
-    button[2].style.color = 'red'
-    
+    button[2].style.color = 'orange'
+    console.log(button[2]);
 }
 
 
-
-
-// hämta body tagg så jag lägga in den ny ul som jag skapa
+// 18 // hämta body tagg så jag lägga in den ny ul som jag skapa
 let body = document.querySelector('body')
 
-// skapa en ny ul element 
+// 19 //skapa en ny ul element 
 let newUl = document.createElement('ul');
 
-// lägga in i body 
+// 20 //lägga in i body 
 body.appendChild(newUl);
 
-// hämta ul
+// 21 // hämta ul
 let ul = document.querySelector('ul');
 
-// loopa genom dom så alla får en class 
+// 22 //loopa genom dom så alla får en class 
 for(let i=0; i<5; i++){
     let newLi = document.createElement('li');
     newLi.setAttribute('class', 'list-item');
@@ -129,18 +120,19 @@ for(let i=0; i<5; i++){
     ul.appendChild(newLi);
     console.log(newLi) 
 } 
-    
+   // 23 // hämta alla li 
 let li = document.querySelectorAll('li');
-// loopa genom så alla li får border röd
+
+// 24 // loopa genom så alla li får border röd
 for(let y=0; y<li.length; y++){
     li[y].style.border = 'solid 2px red'
    
 }
 
-// gör att ul elemnent ej synligt i webben 
+// 25 // gör att ul elemnent ej synligt i webben 
 ul.style.display = 'none'
 
-// med en click på logo lägst upp sidan gör att ul elementet synligt.
+//  26 //med en click på logo lägst upp sidan gör att ul elementet synligt.
 let img = document.querySelectorAll('img');
 img[0].addEventListener('click', function(){
     ul.style.display = 'block'
