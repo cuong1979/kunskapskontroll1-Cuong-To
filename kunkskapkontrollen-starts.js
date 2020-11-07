@@ -56,7 +56,7 @@ function resetAll(){
             blockElement.style.display = 'block';
 
     // 12 // reset knapp gör att li listan borta  
-        let ulDel = document.querySelectorAll('ul')     
+        let ulDel = document.querySelector('ul')     
         ulDel.style.display = 'none'
 }       
  
@@ -96,7 +96,7 @@ function changeButtonColor(){
     let button = document.querySelectorAll('button');
     button[1].style.color = 'red'
     button[2].style.color = 'orange'
-    console.log(button[2]);
+    
 }
 
 
