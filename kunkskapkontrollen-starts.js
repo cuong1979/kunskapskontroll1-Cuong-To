@@ -118,7 +118,7 @@ for(let i=0; i<5; i++){
     newLi.setAttribute('class', 'list-item');
     // sätta in li listan till ul 
     ul.appendChild(newLi);
-    console.log(newLi) 
+    //console.log(newLi) 
 } 
    // 23 // hämta alla li 
 let li = document.querySelectorAll('li');
