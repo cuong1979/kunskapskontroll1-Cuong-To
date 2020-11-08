@@ -52,9 +52,13 @@ function resetAll(){
     h2[2].innerText = 'Sinus Hoodie';
 
     // 11 //reset knappen gör att man kan tar nav tar tillbaka nav element.
-    let blockElement = document.querySelector('nav');
-            blockElement.style.display = 'block';
+    let createAgainElement = document.querySelector('header');
+    
+    createAgainElement.appendChild(createNav);
 
+    /* let blockElement = document.querySelector('nav');
+            blockElement.style.display = 'block';
+ */
     // 12 // reset knapp gör att li listan borta  
         let ulDel = document.querySelector('ul')     
         ulDel.style.display = 'none'
@@ -70,13 +74,16 @@ function resetAll(){
         h2[2].innerText = 'BLUE';
 })
 
-    // 14 //clicka knappen på mitten gör att nav elementer försvinner
-    let btn2 = document.querySelectorAll('button');
-    btn2[1].addEventListener('click', function(){
-        let removeElement = document.querySelector('nav');
-        removeElement.style.display = 'none';
-    });
-        
+    // 14 // mus lämma logo längst till vänster gör att nav elementer försvinner
+    let createNav = document.querySelector ('nav')
+    let delLogo = document.querySelector('img');
+    delLogo.addEventListener('mouseleave', function(event){
+        let logoNav = document.getElementById('header-navigation');
+        if(logoNav != null){
+            logoNav.remove();
+        }
+    })
+    
 
     // 15 //ändrar art-1 bakgrungfärg till hot pink
     function changeArt1toHotPink(){
