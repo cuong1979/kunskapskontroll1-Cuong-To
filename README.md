@@ -37,13 +37,12 @@ och där ändra vi tillbaka färgen som var innan.
 13. klicka på texten contact då ändra alla texter på Sinus Hoodie
 jag har hämtat upp id header-navigation och där hämta jag upp den children som är Contact och där gjorde jag en event, så när man clicka på contact då ändra alla texter h2 elemnets.
 
-14. klicka den knappen i mitten då försvinner nav elementen
-hämta upp alla button sen väljer ut knappen mitten som är btns[1]
-och gjort en event så nav element försvinner på webben.
+14. mus lämma logo längst till vänster gör att nav element då försvinner nav elementen.
+gjort en mouseleave event så nav element försvinner på webben.
 
 15. ändrar art-1 bakgrungfärg till hot pink
-gjorde en funktion som kan länka till den knapp1
-så när mar klicka på button 1 då ändra den bakgrundfärg 
+gjorde en funktion keydown h eller H 
+så kommer ändra den bakgrundfärg.
 
 16. ändra första bilden på en den första knappen
 har gjort en funktion som länka till knapp1

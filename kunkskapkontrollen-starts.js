@@ -11,7 +11,6 @@ reset.addEventListener('click', resetAll);
 // 3 // sätt event listener för första knappen
 let knapp1 = btns[0];
 knapp1.addEventListener('click', function(event){
-    changeArt1toHotPink();
     changeImg();
     changeButtonColor();
    
@@ -81,12 +80,17 @@ function resetAll(){
         }
     })
     
-
-    // 15 //ändrar art-1 bakgrungfärg till hot pink
-    function changeArt1toHotPink(){
-    let art1 = document.querySelector('.art-1');
-    art1.style.backgroundColor = 'hotpink';
-}
+    // 15 //ändra art-1 bakgrungfärg till hot pink med keydown h eller H
+    let htmlElement = document.querySelector('html');
+    htmlElement.addEventListener('keydown', function(event){
+        let art1 = document.querySelector('.art-1');
+        
+        if(event.key == 'h' || event.key =='H'){
+            art1.style.backgroundColor = 'hotpink'
+        }
+    })
+        
+    
 
 // 16 //ändra första bilden på en den första knappen
 function changeImg(){
