@@ -53,12 +53,9 @@ function resetAll(){
 
     // 11 //reset knappen gör att man kan tar nav tar tillbaka nav element.
     let createAgainElement = document.querySelector('header');
-    
     createAgainElement.appendChild(createNav);
 
-    /* let blockElement = document.querySelector('nav');
-            blockElement.style.display = 'block';
- */
+    
     // 12 // reset knapp gör att li listan borta  
         let ulDel = document.querySelector('ul')     
         ulDel.style.display = 'none'
@@ -79,7 +76,7 @@ function resetAll(){
     let delLogo = document.querySelector('img');
     delLogo.addEventListener('mouseleave', function(event){
         let logoNav = document.getElementById('header-navigation');
-        if(logoNav != null){
+         if(logoNav != null){ 
             logoNav.remove();
         }
     })
